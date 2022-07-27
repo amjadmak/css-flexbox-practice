@@ -1,5 +1,8 @@
 
 /* General styling */
+body{
+    margin : 0;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -23,10 +26,16 @@
     grid-template-columns:  30% 70%;
     align-items: center;
 }
+#navBtn{
+    display: none;
+}
 .NRGridLinks{
     display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: right;
+    gap: 50px;
+    margin: 4px;
+    padding: 5px;
 }
 
 
@@ -128,6 +137,18 @@ font-size: xx-large;
         align-items: center;
     
     }
+    .NRGridColumn{
+        display: flex;
+        justify-content: space-between;
+    }
+    #navBtn{
+        display: block;
+    }
+
+    .NRGridLinks{
+        display: none;
+    }
+    
     #page3{
         display : flex;
         flex-direction: column;
@@ -146,7 +167,5 @@ font-size: xx-large;
     .page3-logo{
         display: none;
     }
-    #SpotifyLogo{
-        width: 200px;
-    }
+
 }
